@@ -1,7 +1,7 @@
 import sys
 import re
 
-fh = open('logcat_pr.log')
+fh = open('logcat.log')
 for line in fh.readlines():
 	if re.search(r'(?i)your.surname', line):
 		print line
@@ -15,3 +15,5 @@ for line in fh.readlines():
 		print line
 	if re.search(r'(?i)mms', line):
 		print line		
+
+os.system("pause")

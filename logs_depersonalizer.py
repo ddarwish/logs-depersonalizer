@@ -30,3 +30,5 @@ for line in fh.readlines():
 	fo.writelines(line)	
 fo.close()
 fh.close()
+
+os.system("pause")
